@@ -16,7 +16,18 @@
 # Implementing sort() function as sort(width, height, length, mass):
 
 
-def sort(width, height, length, mass):
+def sort(width, height, length, mass) -> str:
+    """Function that will dispatch the packages to the correct stack according to their volume and mass.
+    
+    Keyword arguments:
+    arguments -- dimensions of the package, it could be int or float numbers
+    Return: 
+        - Standard Package: standard packages (those that are not bulky or heavy) can be handled normally.
+        - Special Package: packages that are either heavy or bulky can't be handled automatically.
+        - Rejected Package: packages that are **both** heavy and bulky are rejected.
+    """
+    
+
     # Calculate volume
     volume = width * height * length
 
